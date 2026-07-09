@@ -742,7 +742,7 @@ footer span{color:var(--gold);}
    STEP 1: PASTE YOUR FREE GEMINI API KEY
    Get it at: aistudio.google.com → Get API Key
 ══════════════════════════════════════════ */
-const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+const GEMINI_API_KEY = "My_API_Key";
 
 /* ══════════════════════════════════════════
    CERTIFICATIONS DATA WITH VERIFIED LINKS
@@ -915,16 +915,7 @@ function submitRev() {
 /* ══════════════════════════════════════════
    GEMINI AI CHATBOT
 ══════════════════════════════════════════ */
-import { GoogleGenAI } from "@google/genai";
-
-const API_KEY = "AQ.Ab8RN6LdpQMHaQyArASHKUgeocT61UbbI4jZW0Mly9MTZxZDWw"
-const ai = new GoogleGenAI({ apiKey: API_KEY });
-const interaction = await ai.interactions.create({
-  model: "gemini-3-flash-preview",
-  input: "Explain how AI works in a few words",
-});
-
-console.log(interaction.output_text);
+const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key="+GEMINI_API_KEY;
 const HASSAN_INFO = `You are the warm, professional AI portfolio assistant for Muhammad Hassan Akram. Answer visitor questions about Hassan in 2-4 sentences maximum. Be enthusiastic but concise, and invite visitors to contact Hassan directly for anything you cannot fully answer.
 NAME: Muhammad Hassan Akram.
 DEGREE: B.Sc (Hons) Food Science & Technology, University of Agriculture Faisalabad (UAF), CGPA 3.60, currently in 6th Semester (2023-2027).
@@ -947,7 +938,7 @@ function toggleChat() {
   ic.className = chatOpen?"fas fa-times":"fas fa-robot";
   if(chatOpen && firstOpen){
     firstOpen=false;
-    if(!GEMINI_API_KEY || GEMINI_API_KEY==="AQ.Ab8RN6LdpQMHaQyArASHKUgeocT61UbbI4jZW0Mly9MTZxZDWw") document.getElementById("apiWarn").style.display="block";
+    if(!GEMINI_API_KEY || GEMINI_API_KEY==="My_API_Key") document.getElementById("apiWarn").style.display="block";
     addMsg("bot","👋 Hi! I'm Hassan's AI assistant. Ask me anything about his food science expertise, digital marketing skills, certifications, or how to get in touch!");
     const s=document.getElementById("chatSugs");
     s.innerHTML=sugs.map((q,i)=>`<button class="sug-btn" data-idx="${i}"><i class="fas fa-angle-right" style="font-size:.65rem;margin-right:3px"></i>${q}</button>`).join("");
@@ -974,7 +965,7 @@ async function sendChat(){
   const btn=document.getElementById("sendBtn");
   const text=inp.value.trim();
   if(!text) return;
-  if(!GEMINI_API_KEY || GEMINI_API_KEY==="AQ.Ab8RN6LdpQMHaQyArASHKUgeocT61UbbI4jZW0Mly9MTZxZDWw"){
+  if(!GEMINI_API_KEY || GEMINI_API_KEY==="My_API_Key"){
     document.getElementById("apiWarn").style.display="block";
     addMsg("bot","Please add your Gemini API key first. Get it free at aistudio.google.com!",true);
     return;
