@@ -742,7 +742,7 @@ footer span{color:var(--gold);}
    STEP 1: PASTE YOUR FREE GEMINI API KEY
    Get it at: aistudio.google.com → Get API Key
 ══════════════════════════════════════════ */
-const GEMINI_API_KEY = "My_API_Key";
+const GEMINI_API_KEY = "MY_API_KEY_1";
 
 /* ══════════════════════════════════════════
    CERTIFICATIONS DATA WITH VERIFIED LINKS
@@ -938,7 +938,7 @@ function toggleChat() {
   ic.className = chatOpen?"fas fa-times":"fas fa-robot";
   if(chatOpen && firstOpen){
     firstOpen=false;
-    if(!GEMINI_API_KEY || GEMINI_API_KEY==="My_API_Key") document.getElementById("apiWarn").style.display="block";
+    if(!GEMINI_API_KEY || GEMINI_API_KEY==="MY_API_KEY_1") document.getElementById("apiWarn").style.display="block";
     addMsg("bot","👋 Hi! I'm Hassan's AI assistant. Ask me anything about his food science expertise, digital marketing skills, certifications, or how to get in touch!");
     const s=document.getElementById("chatSugs");
     s.innerHTML=sugs.map((q,i)=>`<button class="sug-btn" data-idx="${i}"><i class="fas fa-angle-right" style="font-size:.65rem;margin-right:3px"></i>${q}</button>`).join("");
@@ -965,7 +965,7 @@ async function sendChat(){
   const btn=document.getElementById("sendBtn");
   const text=inp.value.trim();
   if(!text) return;
-  if(!GEMINI_API_KEY || GEMINI_API_KEY==="My_API_Key"){
+  if(!GEMINI_API_KEY || GEMINI_API_KEY==="MY_API_KEY_1"){
     document.getElementById("apiWarn").style.display="block";
     addMsg("bot","Please add your Gemini API key first. Get it free at aistudio.google.com!",true);
     return;
