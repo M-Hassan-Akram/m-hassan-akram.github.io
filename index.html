@@ -917,18 +917,23 @@ function submitRev() {
 /* ══════════════════════════════════════════
    GEMINI AI CHATBOT
 ══════════════════════════════════════════ */
-const HASSAN_INFO = `You are the warm, professional AI portfolio assistant for Muhammad Hassan Akram. Answer visitor questions about Hassan in 2-4 sentences maximum. Be enthusiastic but concise, and invite visitors to contact Hassan directly for anything you cannot fully answer.
-NAME: Muhammad Hassan Akram.
-DEGREE: B.Sc (Hons) Food Science & Technology, University of Agriculture Faisalabad (UAF), CGPA 3.60, currently in 6th Semester (2023-2027).
-CONTACT: Email mhassanakram698@gmail.com, Phone/WhatsApp +92 300 785 8987, LinkedIn linkedin.com/in/m-hassan-007i, Portfolio m-hassan-akram.github.io.
-SKILLS: Food Science (food safety, packaging, preservation, HACCP), Digital Marketing (Meta Ads, SEO, GEO, content strategy), AI tools, Microsoft Excel, Video editing.
-CERTIFICATIONS: 41+ certificates including Meta Certified Digital Marketing Associate (Credly verified), Oxford AI Essentials, Microsoft Excel Specialization, Meta Social Media Marketing Specialization, Digital Marketing Specialization (University of Illinois Urbana-Champaign), IBM Generative AI courses, Google Project Management, and 35+ more via Coursera.
-EXPERIENCE: Digital Marketing Expert at YPDC-UAF (May-Sep 2024); Head Teacher/Principal at Al Falah Grammar High School (Aug 2022-Sep 2023); YouTube creator of "Sani Sports" (~188k subscribers).
-ACHIEVEMENTS: UGRAD Scholarship shortlisted, PURE Turkey research program accepted, Honhaar Scholarship recipient, Prime Minister's Laptop Scheme recipient, volunteers at free medical camps for underprivileged communities.
-INDUSTRIAL VISITS: Nishat Sutas Dairy Industry and Cola Next Beverage Factory, gaining hands-on exposure to HACCP, QA and production processes.
-GOALS: Pursue a Master's degree abroad and apply AI-driven digital solutions to food security and agriculture, locally and globally.
-SPORTS: Badminton and Cricket championship title holder.
-If a question falls outside this information, politely say you are not sure and suggest contacting Hassan directly at mhassanakram698@gmail.com.`;
+const SYSTEM_PREFIX = `You are the warm, professional AI portfolio assistant for Muhammad Hassan Akram, embedded on his portfolio website. Below is the current text content pulled directly from his site. Answer visitor questions using ONLY that content, in 2-4 sentences maximum, in a warm and professional tone. Never invent facts that aren't in the content below. If a visitor asks about something the content doesn't cover, politely say you don't have that specific detail and suggest they contact Hassan directly using the contact info in the content below — but always try your best to answer from what IS there first, rather than deflecting right away.
+
+CURRENT WEBSITE CONTENT:
+`;
+// Reads the live text straight out of the page's own sections, so the
+// chatbot always answers from whatever is actually on the site right now —
+// edit the HTML, and the next visitor's chat automatically reflects it.
+function getSiteContext(){
+  const sectionIds = ["hero","about","education","experience","visits","skills","certifications","achievements","sports","reviews","contact"];
+  let text = "";
+  sectionIds.forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) text += el.innerText.replace(/\s+/g," ").trim() + "\n\n";
+  });
+  return text.trim();
+}
+let HASSAN_INFO = "";
 let chatHistory = [], chatOpen = false, firstOpen = true;
 const sugs = ["What are Hassan's skills?","Is Hassan available for an internship?","Tell me about his certifications","What's his food science background?","What are his industrial visit experiences?","How can I contact Hassan?"];
 function toggleChat() {
@@ -939,6 +944,7 @@ function toggleChat() {
   ic.className = chatOpen?"fas fa-times":"fas fa-robot";
   if(chatOpen && firstOpen){
     firstOpen=false;
+    HASSAN_INFO = SYSTEM_PREFIX + getSiteContext();
     if(!PROXY_URL || PROXY_URL.indexOf("YOUR_")===0) document.getElementById("apiWarn").style.display="block";
     addMsg("bot","👋 Hi! I'm Hassan's AI assistant. Ask me anything about his food science expertise, digital marketing skills, certifications, or how to get in touch!");
     const s=document.getElementById("chatSugs");
@@ -976,13 +982,16 @@ async function sendChat(){
   chatHistory.push({role:"user",parts:[{text}]});
   try{
     const res=await fetch(PROXY_URL,{method:"POST",headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({system_instruction:{parts:[{text:HASSAN_INFO}]},contents:chatHistory,generationConfig:{maxOutputTokens:200,thinkingConfig:{thinkingLevel:"low"}}})});
+      body:JSON.stringify({system_instruction:{parts:[{text:HASSAN_INFO}]},contents:chatHistory,generationConfig:{maxOutputTokens:1024,thinkingConfig:{thinkingLevel:"minimal"}}})});
     const data=await res.json();
     const t=document.getElementById("typing"); if(t) t.remove();
-    if(res.ok && data.candidates && data.candidates[0] && data.candidates[0].content){
+    if(res.ok && data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0] && data.candidates[0].content.parts[0].text){
       const reply=data.candidates[0].content.parts[0].text;
       chatHistory.push({role:"model",parts:[{text:reply}]});
       addMsg("bot",reply);
+    } else if(res.ok && data.candidates && data.candidates[0] && data.candidates[0].finishReason==="MAX_TOKENS"){
+      chatHistory.pop();
+      addMsg("bot","That one needs a longer answer than I could fit — could you ask it a bit more specifically, or reach Hassan directly at mhassanakram698@gmail.com?",true);
     } else if(res.status===400){
       chatHistory.pop();
       addMsg("bot","There's a problem with the API key (error 400). Please make sure it was copied correctly into the code. Contact Hassan at mhassanakram698@gmail.com if this continues.",true);
