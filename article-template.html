@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DHJQN29PF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DHJQN29PF7');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     ARTICLE TEMPLATE — HOW TO USE
+     This is not a live page (it's not in sitemap.xml or linked from nav).
+     To publish a real article: duplicate this file into /articles/ with a
+     URL-friendly filename (e.g. articles/haccp-for-beginners.html), then
+     replace every [BRACKETED PLACEHOLDER] and the TOC/FAQ/Related blocks.
+     Search this file for "PLACEHOLDER" to find every spot that needs it.
+     ══════════════════════════════════════════════════════════════════ -->
+
+<title>[Article Title] | Muhammad Hassan Akram</title>
+<meta name="description" content="[150-160 character summary of the article for search results — write this last, after the article, so it accurately reflects the content.]"/>
+<meta name="author" content="Muhammad Hassan Akram"/>
+<meta name="robots" content="noindex,nofollow"/> <!-- this file is a template, not real content — change to "index,follow" in your copy once it's a real article -->
+<!-- Remember to also add the new article's URL to sitemap.xml once published. -->
+<link rel="canonical" href="https://muhammadhassanakram.me/articles/[article-slug].html"/>
+
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://muhammadhassanakram.me/articles/[article-slug].html"/>
+<meta property="og:title" content="[Article Title]"/>
+<meta property="og:description" content="[Same 150-160 character summary as the meta description above.]"/>
+<meta property="og:site_name" content="Muhammad Hassan Akram Portfolio"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:image" content="https://muhammadhassanakram.me/articles/img/[article-slug]-hero.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="[Descriptive alt text for the hero image]"/>
+<meta property="article:published_time" content="[YYYY-MM-DDT00:00:00+05:00]"/>
+<meta property="article:author" content="Muhammad Hassan Akram"/>
+<meta property="article:section" content="[Food Science & Technology | Digital Marketing | Scholarships | AI & Technology | Career & Professional Development]"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="[Article Title]"/>
+<meta name="twitter:description" content="[Same summary again.]"/>
+<meta name="twitter:image" content="https://muhammadhassanakram.me/articles/img/[article-slug]-hero.jpg"/>
+
+<!-- Schema.org Article — fill in every [PLACEHOLDER] before publishing -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "[Article Title]",
+  "description": "[150-160 character summary]",
+  "image": "https://muhammadhassanakram.me/articles/img/[article-slug]-hero.jpg",
+  "datePublished": "[YYYY-MM-DD]",
+  "dateModified": "[YYYY-MM-DD]",
+  "author": {"@type": "Person", "name": "Muhammad Hassan Akram", "url": "https://muhammadhassanakram.me/"},
+  "publisher": {"@type": "Person", "name": "Muhammad Hassan Akram"},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://muhammadhassanakram.me/articles/[article-slug].html"}
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://muhammadhassanakram.me/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://muhammadhassanakram.me/insights.html"},{"@type":"ListItem","position":3,"name":"[Article Title]","item":"https://muhammadhassanakram.me/articles/[article-slug].html"}]}
+</script>
+<!-- FAQ schema — only include this block if you keep the FAQ section below;
+     delete it if the article doesn't have one. Must match the visible
+     FAQ content exactly (Google penalizes FAQ schema that doesn't match
+     what's on the page). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "[FAQ question 1]", "acceptedAnswer": {"@type": "Answer", "text": "[FAQ answer 1]"}},
+    {"@type": "Question", "name": "[FAQ question 2]", "acceptedAnswer": {"@type": "Answer", "text": "[FAQ answer 2]"}}
+  ]
+}
+</script>
+
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+:root{--navy:#0e1f47;--navy2:#1b3a6b;--navy3:#070f25;--gold:#c8972b;--gold2:#e8b84b;--gold3:#f5d080;--white:#fff;--light:#f4f6fa;--light2:#eef1f8;--muted:#6b7a99;--text:#1a2540;--border:#dde3f0;--grad:linear-gradient(135deg,#0e1f47 0%,#1b3a6b 55%,#0a1530 100%);}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:66px;}
+body{font-family:"Inter",sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(14,31,71,0.97);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;border-bottom:1px solid rgba(200,151,43,0.2);}
+.nav-logo{color:var(--gold);font-weight:900;font-size:1.3rem;letter-spacing:1px;text-decoration:none;}
+.nav-logo span{color:var(--white);}
+.nav-links{display:flex;gap:1.4rem;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:0.8rem;font-weight:500;}
+.nav-links a:hover{color:var(--gold2);}
+@media(max-width:900px){.nav-links{display:none;}}
+.wrap{max-width:760px;margin:0 auto;padding:130px 5% 90px;}
+.crumb{display:flex;gap:8px;font-size:0.8rem;color:var(--muted);margin-bottom:1.5rem;flex-wrap:wrap;}
+.crumb a{color:var(--muted);text-decoration:none;}
+.crumb a:hover{color:var(--gold);}
+.art-cat{display:inline-block;background:rgba(200,151,43,0.12);color:var(--gold);font-size:0.7rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:1rem;}
+h1.art-title{font-family:"Playfair Display",serif;font-size:clamp(1.9rem,4vw,2.9rem);color:var(--navy);line-height:1.25;margin-bottom:1.2rem;}
+.art-meta{display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;color:var(--muted);font-size:0.85rem;padding-bottom:1.6rem;border-bottom:1px solid var(--border);margin-bottom:1.8rem;}
+.art-author{display:flex;align-items:center;gap:9px;}
+.art-author img{width:34px;height:34px;border-radius:50%;object-fit:cover;}
+.art-meta span{display:flex;align-items:center;gap:6px;}
+.art-hero{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-radius:14px;margin-bottom:2.2rem;}
+/* Table of contents */
+.toc{background:var(--light);border:1px solid var(--border);border-radius:12px;padding:1.3rem 1.5rem;margin-bottom:2.2rem;}
+.toc h2{font-size:0.95rem;color:var(--navy);margin-bottom:0.7rem;}
+.toc ol{padding-left:1.2rem;}
+.toc a{color:var(--muted);text-decoration:none;font-size:0.87rem;line-height:1.9;}
+.toc a:hover{color:var(--gold);}
+/* Body copy */
+.art-body{font-size:1.02rem;line-height:1.85;color:var(--text);}
+.art-body h2{font-family:"Playfair Display",serif;font-size:1.5rem;color:var(--navy);margin:2.2rem 0 1rem;}
+.art-body h3{font-size:1.15rem;color:var(--navy);margin:1.6rem 0 0.8rem;}
+.art-body p{margin-bottom:1.2rem;}
+.art-body ul,.art-body ol{margin:0 0 1.2rem 1.4rem;}
+.art-body li{margin-bottom:0.5rem;}
+/* Share buttons */
+.share{display:flex;align-items:center;gap:0.7rem;margin:2.5rem 0;padding:1.3rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.share span{font-size:0.82rem;color:var(--muted);font-weight:600;margin-right:4px;}
+.share a{width:38px;height:38px;border-radius:50%;background:var(--light);color:var(--navy);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.2s;}
+.share a:hover{background:var(--gold);color:var(--white);}
+/* FAQ accordion */
+.faq{margin:2.5rem 0;}
+.faq h2{font-family:"Playfair Display",serif;font-size:1.5rem;color:var(--navy);margin-bottom:1.2rem;}
+.faq-item{border:1px solid var(--border);border-radius:10px;margin-bottom:0.7rem;overflow:hidden;}
+.faq-q{width:100%;text-align:left;background:var(--light);border:none;padding:1rem 1.2rem;font-weight:700;font-size:0.92rem;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+.faq-q i{transition:transform 0.2s;color:var(--gold);}
+.faq-item.open .faq-q i{transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 1.2rem;}
+.faq-item.open .faq-a{max-height:300px;padding:1rem 1.2rem;}
+.faq-a p{font-size:0.88rem;color:var(--muted);line-height:1.7;}
+/* Related articles */
+.related{margin-top:3rem;}
+.related h2{font-family:"Playfair Display",serif;font-size:1.5rem;color:var(--navy);margin-bottom:1.2rem;}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;}
+.rel-card{text-decoration:none;color:inherit;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all 0.2s;}
+.rel-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.rel-card img{width:100%;height:110px;object-fit:cover;}
+.rel-card p{padding:0.8rem 1rem;font-size:0.85rem;font-weight:700;color:var(--navy);}
+footer{background:#060d1c;color:rgba(255,255,255,0.35);text-align:center;padding:1.3rem;font-size:0.76rem;}
+footer span{color:var(--gold);}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html#hero" class="nav-logo">MH<span>A</span></a>
+  <ul class="nav-links">
+    <li><a href="../insights.html">Insights</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<article class="wrap">
+  <nav class="crumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a><span>/</span>
+    <a href="../insights.html">Insights</a><span>/</span>
+    <span aria-current="page">[Article Title]</span>
+  </nav>
+
+  <span class="art-cat">[Category]</span>
+  <h1 class="art-title">[Article Title]</h1>
+
+  <div class="art-meta">
+    <div class="art-author">
+      <img src="[author-photo-url-or-reuse-site-profile-photo]" alt="Muhammad Hassan Akram"/>
+      <span>Muhammad Hassan Akram</span>
+    </div>
+    <span><i class="far fa-calendar"></i> [Month DD, YYYY]</span>
+    <span><i class="far fa-clock"></i> [X] min read</span>
+  </div>
+
+  <img class="art-hero" src="img/[article-slug]-hero.jpg" alt="[Descriptive alt text for the hero image]" width="1200" height="630" loading="eager" decoding="async"/>
+
+  <!-- Table of Contents — list every H2 in the body below, linked to matching ids -->
+  <nav class="toc" aria-label="Table of contents">
+    <h2>In this article</h2>
+    <ol>
+      <li><a href="#section-1">[Section 1 heading]</a></li>
+      <li><a href="#section-2">[Section 2 heading]</a></li>
+      <li><a href="#section-3">[Section 3 heading]</a></li>
+    </ol>
+  </nav>
+
+  <div class="art-body">
+    <h2 id="section-1">[Section 1 heading]</h2>
+    <p>[Body copy. Keep paragraphs short — 2-4 sentences works best for on-screen reading.]</p>
+
+    <h2 id="section-2">[Section 2 heading]</h2>
+    <p>[Body copy.]</p>
+    <ul>
+      <li>[List item]</li>
+      <li>[List item]</li>
+    </ul>
+
+    <h2 id="section-3">[Section 3 heading]</h2>
+    <p>[Body copy.]</p>
+  </div>
+
+  <!-- Share buttons — links pre-built, just the URL/text placeholders need filling in at publish time -->
+  <div class="share" aria-label="Share this article">
+    <span>Share:</span>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://muhammadhassanakram.me/articles/[article-slug].html" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://twitter.com/intent/tweet?url=https://muhammadhassanakram.me/articles/[article-slug].html&text=[Article Title]" target="_blank" rel="noopener" aria-label="Share on X"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://wa.me/?text=[Article Title]%20https://muhammadhassanakram.me/articles/[article-slug].html" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:?subject=[Article Title]&body=https://muhammadhassanakram.me/articles/[article-slug].html" aria-label="Share by email"><i class="far fa-envelope"></i></a>
+  </div>
+
+  <!-- FAQ — delete this whole block (and its schema in <head>) if the article doesn't need one -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">[FAQ question 1] <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-a"><p>[FAQ answer 1 — must match the FAQPage schema in the head exactly.]</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">[FAQ question 2] <i class="fas fa-chevron-down"></i></button>
+      <div class="faq-a"><p>[FAQ answer 2 — must match the FAQPage schema in the head exactly.]</p></div>
+    </div>
+  </section>
+
+  <!-- Related Articles — link 2-3 other posts once they exist -->
+  <section class="related">
+    <h2>Related Articles</h2>
+    <div class="rel-grid">
+      <a href="[related-article-1].html" class="rel-card">
+        <img src="img/[related-1-thumb].jpg" alt="[Related article 1 title]" loading="lazy" decoding="async" width="220" height="110"/>
+        <p>[Related article 1 title]</p>
+      </a>
+      <a href="[related-article-2].html" class="rel-card">
+        <img src="img/[related-2-thumb].jpg" alt="[Related article 2 title]" loading="lazy" decoding="async" width="220" height="110"/>
+        <p>[Related article 2 title]</p>
+      </a>
+    </div>
+  </section>
+</article>
+
+<footer>
+  <p>Designed &amp; Developed by <span>Muhammad Hassan Akram</span> &mdash; &copy; <span id="curYear">2026</span> All Rights Reserved &bull; Faisalabad, Pakistan</p>
+</footer>
+<script>document.getElementById("curYear").textContent=new Date().getFullYear();</script>
+</body>
+</html>
