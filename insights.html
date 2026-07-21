@@ -51,7 +51,6 @@
 html{scroll-behavior:smooth;scroll-padding-top:66px;}
 body{font-family:"Inter",sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;animation:pageFadeIn 0.5s ease;}
 @keyframes pageFadeIn{from{opacity:0}to{opacity:1}}
-/* NAVBAR (identical to the homepage, for a consistent header across pages) */
 nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(14,31,71,0.97);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:66px;border-bottom:1px solid rgba(200,151,43,0.2);animation:slideDown 0.7s ease forwards;}
 @keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
 .nav-logo{color:var(--gold);font-weight:900;font-size:1.3rem;letter-spacing:1px;text-decoration:none;}
@@ -83,7 +82,6 @@ nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(14,31,71,0.97);
 .mob-menu{display:none;position:fixed;top:66px;left:0;right:0;z-index:999;background:rgba(14,31,71,0.98);padding:1.5rem 5%;flex-direction:column;gap:0.7rem;border-top:1px solid rgba(200,151,43,0.15);}
 .mob-menu a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.9rem;font-weight:500;padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.07);}
 .mob-menu.open{display:flex;}
-/* SHARED SECTION PATTERN */
 section{padding:85px 5%;}
 .sec{max-width:1200px;margin:0 auto;}
 .sec-tag{color:var(--gold);font-size:0.73rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:0.5rem;display:block;}
@@ -92,7 +90,6 @@ section{padding:85px 5%;}
 .sec-line{width:48px;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;margin-bottom:2.5rem;}
 .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:12px 26px;border-radius:8px;font-weight:800;font-size:0.88rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(200,151,43,0.4);transition:all 0.25s;border:none;cursor:pointer;}
 .btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,151,43,0.55);}
-/* PAGE HEADER (mirrors the hero/contact gradient bookends already used site-wide) */
 #pageHead{background:var(--grad);padding:150px 5% 70px;text-align:center;}
 .crumb{display:flex;justify-content:center;gap:8px;font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:1.2rem;}
 .crumb a{color:rgba(255,255,255,0.75);text-decoration:none;}
@@ -100,7 +97,6 @@ section{padding:85px 5%;}
 .crumb span[aria-current]{color:var(--gold2);}
 #pageHead .sec-title{margin-bottom:0.7rem;}
 .page-sub{color:rgba(255,255,255,0.65);font-size:1rem;max-width:600px;margin:0 auto;line-height:1.7;}
-/* SEARCH BAR (replaces the old category cards as the page's entry point) */
 .insight-search{max-width:520px;margin:2.2rem auto 0;position:relative;}
 .insight-search input{width:100%;padding:15px 50px;border-radius:100px;border:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);color:var(--white);font-size:0.92rem;font-family:inherit;transition:all 0.3s;}
 .insight-search input::placeholder{color:rgba(255,255,255,0.45);}
@@ -111,12 +107,10 @@ section{padding:85px 5%;}
 .search-clear.show{transform:translateY(-50%) scale(1);}
 .search-clear:hover{color:var(--navy);background:var(--gold2);}
 .no-results{grid-column:1/-1;text-align:center;padding:3rem 1.5rem;color:rgba(255,255,255,0.5);}
-/* CATEGORY FILTERS (light-background variant of the certifications filter pattern) */
 .ifilter{display:flex;flex-wrap:wrap;gap:0.6rem;justify-content:center;margin-bottom:3rem;}
 .ifbtn{padding:8px 20px;border-radius:100px;font-size:0.8rem;font-weight:700;border:1.5px solid var(--border);color:var(--muted);background:var(--white);cursor:pointer;transition:all 0.2s;}
 .ifbtn:hover{border-color:var(--gold);color:var(--navy);}
 .ifbtn.active{background:linear-gradient(135deg,var(--gold),var(--gold2));border-color:var(--gold);color:var(--navy);}
-/* ARTICLE CARD GRID (ready for future posts — see the commented template below) */
 .igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.8rem;}
 .icard{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all 0.3s;text-decoration:none;color:inherit;display:flex;flex-direction:column;}
 .icard:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(14,31,71,0.14);border-color:var(--gold);}
@@ -127,222 +121,187 @@ section{padding:85px 5%;}
 .icard-excerpt{font-size:0.85rem;color:var(--muted);line-height:1.6;flex:1;}
 .icard-meta{display:flex;gap:14px;font-size:0.73rem;color:var(--muted);border-top:1px solid var(--border);padding-top:0.7rem;margin-top:0.2rem;}
 .icard-meta span{display:flex;align-items:center;gap:5px;}
-/* EMPTY STATE */
 .iempty{grid-column:1/-1;text-align:center;padding:4rem 1.5rem;background:var(--light);border-radius:16px;border:1.5px dashed var(--border);}
 .iempty i{font-size:2.4rem;color:var(--gold);margin-bottom:1.1rem;}
 .iempty h3{font-family:"Playfair Display",serif;font-size:1.4rem;color:var(--navy);margin-bottom:0.6rem;}
 .iempty p{color:var(--muted);font-size:0.9rem;max-width:440px;margin:0 auto 1.5rem;line-height:1.7;}
-/* PAGINATION (hidden until there are enough articles to page through) */
 .ipage{display:none;justify-content:center;align-items:center;gap:0.5rem;margin-top:3rem;}
 .ipage.show{display:flex;}
 .ipage button{width:38px;height:38px;border-radius:9px;border:1.5px solid var(--border);background:var(--white);color:var(--navy);font-weight:700;cursor:pointer;transition:all 0.2s;}
 .ipage button:hover{border-color:var(--gold);}
 .ipage button.active{background:linear-gradient(135deg,var(--gold),var(--gold2));border-color:var(--gold);color:var(--navy);}
 .ipage button:disabled{opacity:0.4;cursor:not-allowed;}
-/* FOOTER (identical to the homepage) */
 footer{background:#060d1c;color:rgba(255,255,255,0.35);text-align:center;padding:1.3rem;font-size:0.76rem;}
 footer span{color:var(--gold);}
 #scrollTop{position:fixed;bottom:26px;right:26px;z-index:900;width:44px;height:44px;border-radius:50%;border:none;background:var(--navy);color:var(--gold);font-size:1rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);opacity:0;pointer-events:none;transition:all 0.3s;}
 #scrollTop.show{opacity:1;pointer-events:all;}
 #scrollTop:hover{background:var(--gold);color:var(--navy);}
-@media(max-width:700px){
-  .nav-links,.nav-cta{display:none;}
-  .hamburger{display:block;}
-  #pageHead{padding-top:120px;}
-}
+@media(max-width:700px){.nav-links,.nav-cta{display:none;}.hamburger{display:block;}#pageHead{padding-top:120px;}}
 </style>
 </head>
 <body>
-<!-- NAVBAR -->
 <nav>
-  <a href="index.html#hero" class="nav-logo">MH<span>A</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#education">Education</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#visits">Industrial Visits</a></li>
-    <li><a href="index.html#certifications">Certifications</a></li>
-    <li><a href="index.html#reviews">Reviews</a></li>
-    <li><a href="index.html#sports">Sports</a></li>
-    <li class="nav-dropdown">
-      <a href="insights.html" class="active nav-insights">Insights <i class="fas fa-chevron-down nav-caret"></i></a>
-      <div class="nav-dropdown-menu">
-        <div class="nav-dropdown-inner">
-          <a href="insights.html?cat=food-science"><i class="fas fa-flask"></i> Food Science &amp; Technology</a>
-          <a href="insights.html?cat=digital-marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a>
-          <a href="insights.html?cat=scholarships"><i class="fas fa-award"></i> Scholarships</a>
-          <a href="insights.html?cat=ai-tech"><i class="fas fa-robot"></i> AI &amp; Technology</a>
-          <a href="insights.html?cat=career"><i class="fas fa-briefcase"></i> Career &amp; Professional Development</a>
-          <a href="insights.html" class="nav-dropdown-all">View All Insights <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-  <a href="index.html#contact" class="nav-cta">Hire Me</a>
-  <button class="hamburger" onclick="toggleMob()" aria-label="Menu"><i class="fas fa-bars"></i></button>
+<a href="index.html#hero" class="nav-logo">MH<span>A</span></a>
+<ul class="nav-links">
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#education">Education</a></li>
+<li><a href="index.html#experience">Experience</a></li>
+<li><a href="index.html#visits">Industrial Visits</a></li>
+<li><a href="index.html#certifications">Certifications</a></li>
+<li><a href="index.html#reviews">Reviews</a></li>
+<li><a href="index.html#sports">Sports</a></li>
+<li class="nav-dropdown">
+<a href="insights.html" class="active nav-insights">Insights <i class="fas fa-chevron-down nav-caret"></i></a>
+<div class="nav-dropdown-menu">
+<div class="nav-dropdown-inner">
+<a href="insights.html?cat=food-science"><i class="fas fa-flask"></i> Food Science &amp; Technology</a>
+<a href="insights.html?cat=digital-marketing"><i class="fas fa-bullhorn"></i> Digital Marketing</a>
+<a href="insights.html?cat=scholarships"><i class="fas fa-award"></i> Scholarships</a>
+<a href="insights.html?cat=ai-tech"><i class="fas fa-robot"></i> AI &amp; Technology</a>
+<a href="insights.html?cat=career"><i class="fas fa-briefcase"></i> Career &amp; Professional Development</a>
+<a href="insights.html" class="nav-dropdown-all">View All Insights <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+<a href="index.html#contact" class="nav-cta">Hire Me</a>
+<button class="hamburger" onclick="toggleMob()" aria-label="Menu"><i class="fas fa-bars"></i></button>
 </nav>
 <div class="mob-menu" id="mobMenu">
-  <a href="index.html#about" onclick="toggleMob()">About</a>
-  <a href="index.html#education" onclick="toggleMob()">Education</a>
-  <a href="index.html#experience" onclick="toggleMob()">Experience</a>
-  <a href="index.html#visits" onclick="toggleMob()">Industrial Visits</a>
-  <a href="index.html#certifications" onclick="toggleMob()">Certifications</a>
-  <a href="index.html#reviews" onclick="toggleMob()">Reviews</a>
-  <a href="index.html#sports" onclick="toggleMob()">Sports & Interests</a>
-  <div class="mob-dropdown">
-    <button class="mob-dropdown-toggle" onclick="this.parentElement.classList.toggle('open')">Insights <i class="fas fa-chevron-down"></i></button>
-    <div class="mob-dropdown-menu">
-      <a href="insights.html?cat=food-science" onclick="toggleMob()">Food Science &amp; Technology</a>
-      <a href="insights.html?cat=digital-marketing" onclick="toggleMob()">Digital Marketing</a>
-      <a href="insights.html?cat=scholarships" onclick="toggleMob()">Scholarships</a>
-      <a href="insights.html?cat=ai-tech" onclick="toggleMob()">AI &amp; Technology</a>
-      <a href="insights.html?cat=career" onclick="toggleMob()">Career &amp; Professional Development</a>
-      <a href="insights.html" onclick="toggleMob()" style="color:var(--gold2)">View All Insights</a>
-    </div>
-  </div>
-  <a href="index.html#contact" onclick="toggleMob()">Contact</a>
+<a href="index.html#about" onclick="toggleMob()">About</a>
+<a href="index.html#education" onclick="toggleMob()">Education</a>
+<a href="index.html#experience" onclick="toggleMob()">Experience</a>
+<a href="index.html#visits" onclick="toggleMob()">Industrial Visits</a>
+<a href="index.html#certifications" onclick="toggleMob()">Certifications</a>
+<a href="index.html#reviews" onclick="toggleMob()">Reviews</a>
+<a href="index.html#sports" onclick="toggleMob()">Sports & Interests</a>
+<div class="mob-dropdown">
+<button class="mob-dropdown-toggle" onclick="this.parentElement.classList.toggle('open')">Insights <i class="fas fa-chevron-down"></i></button>
+<div class="mob-dropdown-menu">
+<a href="insights.html?cat=food-science" onclick="toggleMob()">Food Science &amp; Technology</a>
+<a href="insights.html?cat=digital-marketing" onclick="toggleMob()">Digital Marketing</a>
+<a href="insights.html?cat=scholarships" onclick="toggleMob()">Scholarships</a>
+<a href="insights.html?cat=ai-tech" onclick="toggleMob()">AI &amp; Technology</a>
+<a href="insights.html?cat=career" onclick="toggleMob()">Career &amp; Professional Development</a>
+<a href="insights.html" onclick="toggleMob()" style="color:var(--gold2)">View All Insights</a>
+</div>
+</div>
+<a href="index.html#contact" onclick="toggleMob()">Contact</a>
 </div>
 <main>
-<!-- PAGE HEADER -->
 <section id="pageHead">
-  <nav class="crumb" aria-label="Breadcrumb">
-    <a href="index.html">Home</a>
-    <span>/</span>
-    <span aria-current="page">Insights</span>
-  </nav>
-  <h1 class="sec-title light">Insights</h1>
-  <p class="page-sub">Notes and articles on food science, artificial intelligence, digital marketing, scholarships, and career growth.</p>
-  <div class="insight-search">
-    <input type="text" id="articleSearch" placeholder="Search articles by keyword..." aria-label="Search articles" oninput="handleSearch(this.value)"/>
-    <i class="fas fa-search search-icon"></i>
-    <span class="search-clear" id="searchClear" onclick="clearSearch()" aria-label="Clear search"><i class="fas fa-times"></i></span>
-  </div>
+<nav class="crumb" aria-label="Breadcrumb">
+<a href="index.html">Home</a>
+<span>/</span>
+<span aria-current="page">Insights</span>
+</nav>
+<h1 class="sec-title light">Insights</h1>
+<p class="page-sub">Notes and articles on food science, artificial intelligence, digital marketing, scholarships, and career growth.</p>
+<div class="insight-search">
+<input type="text" id="articleSearch" placeholder="Search articles by keyword..." aria-label="Search articles" oninput="handleSearch(this.value)"/>
+<i class="fas fa-search search-icon"></i>
+<span class="search-clear" id="searchClear" onclick="clearSearch()" aria-label="Clear search"><i class="fas fa-times"></i></span>
+</div>
 </section>
-<!-- ARTICLES -->
 <section id="articles" aria-label="Articles">
-  <div class="sec">
-    <div class="ifilter" id="catFilter" role="tablist" aria-label="Filter articles by category">
-      <button class="ifbtn active" data-cat="all">All</button>
-      <button class="ifbtn" data-cat="food-science">Food Science &amp; Technology</button>
-      <button class="ifbtn" data-cat="digital-marketing">Digital Marketing</button>
-      <button class="ifbtn" data-cat="scholarships">Scholarships</button>
-      <button class="ifbtn" data-cat="ai-tech">AI &amp; Technology</button>
-      <button class="ifbtn" data-cat="career">Career &amp; Professional Development</button>
-    </div>
-
-    <div class="igrid" id="articleGrid">
-      <!--
-        REUSABLE ARTICLE CARD TEMPLATE — copy this block once a real article
-        exists, fill it in, and place it before the .iempty div below (which
-        should then be deleted, or kept and just hidden — see the JS).
-        data-cat must match one of the category button values above so the
-        filter buttons work automatically with no extra JS changes needed.
-
-      <a href="articles/your-article-slug.html" class="icard" data-cat="food-science">
-        <img class="icard-img" src="articles/img/your-thumbnail.jpg" alt="Descriptive alt text for the article's hero image" loading="lazy" decoding="async" width="600" height="360"/>
-        <div class="icard-body">
-          <span class="icard-cat">Food Science</span>
-          <h3 class="icard-title">Article Title Goes Here</h3>
-          <p class="icard-excerpt">One- to two-sentence summary of what the article covers, written to make someone want to click through and read it.</p>
-          <div class="icard-meta">
-            <span><i class="far fa-calendar"></i> Jan 1, 2027</span>
-            <span><i class="far fa-clock"></i> 5 min read</span>
-          </div>
-        </div>
-      </a>
-      -->
-
-      <div class="iempty" id="emptyState">
-        <i class="fas fa-pen-nib"></i>
-        <h3>Articles are on their way</h3>
-        <p>I'm working on in-depth pieces about food science, AI, digital marketing, and the student-to-career journey. Check back soon, or connect on LinkedIn to know when the first one drops.</p>
-        <a href="https://linkedin.com/in/m-hassan-007i" class="btn-gold" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> Follow for Updates</a>
-      </div>
-    </div>
-
-    <!-- PAGINATION — stays hidden (no .show class) until enough articles
-         exist to need more than one page. Add page buttons here and toggle
-         .show on this element once that's the case. -->
-    <div class="ipage" id="pagination" aria-label="Article pages">
-      <button id="pagePrev" aria-label="Previous page"><i class="fas fa-chevron-left"></i></button>
-      <button class="active">1</button>
-      <button id="pageNext" aria-label="Next page"><i class="fas fa-chevron-right"></i></button>
-    </div>
-  </div>
+<div class="sec">
+<div class="ifilter" id="catFilter" role="tablist" aria-label="Filter articles by category">
+<button class="ifbtn active" data-cat="all">All</button>
+<button class="ifbtn" data-cat="food-science">Food Science &amp; Technology</button>
+<button class="ifbtn" data-cat="digital-marketing">Digital Marketing</button>
+<button class="ifbtn" data-cat="scholarships">Scholarships</button>
+<button class="ifbtn" data-cat="ai-tech">AI &amp; Technology</button>
+<button class="ifbtn" data-cat="career">Career &amp; Professional Development</button>
+</div>
+<div class="igrid" id="articleGrid">
+<!-- ARTICLE CARD: Pakistani Mango Freeze Drying -->
+<a href="articles/pakistani-mango-freeze-drying.html" class="icard" data-cat="food-science">
+<img class="icard-img" src="articles/img/pakistani-mango-freeze-drying-hero.jpg" alt="Freeze-dried mango cubes alongside fresh mango slices with industrial freeze drying equipment in the background" loading="lazy" decoding="async" width="600" height="360"/>
+<div class="icard-body">
+<span class="icard-cat">Food Science</span>
+<h3 class="icard-title">Pakistani Mango Freeze Drying: Science, Industry and Export Potential</h3>
+<p class="icard-excerpt">A comprehensive exploration of lyophilization technology applied to Pakistan's world-class mango varieties. From sublimation science to industrial processing, export economics, and future sustainability trends.</p>
+<div class="icard-meta">
+<span><i class="far fa-calendar"></i> Jul 20, 2026</span>
+<span><i class="far fa-clock"></i> 18 min read</span>
+</div>
+</div>
+</a>
+<!-- Empty state for other categories -->
+<div class="iempty" id="emptyState" style="display:none;">
+<i class="fas fa-pen-nib"></i>
+<h3>Articles are on their way</h3>
+<p>I'm working on in-depth pieces about food science, AI, digital marketing, and the student-to-career journey. Check back soon, or connect on LinkedIn to know when the next one drops.</p>
+<a href="https://linkedin.com/in/m-hassan-007i" class="btn-gold" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> Follow for Updates</a>
+</div>
+</div>
+<div class="ipage" id="pagination" aria-label="Article pages">
+<button id="pagePrev" aria-label="Previous page"><i class="fas fa-chevron-left"></i></button>
+<button class="active">1</button>
+<button id="pageNext" aria-label="Next page"><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
 </section>
 </main>
 <footer>
-  <p>Designed &amp; Developed by <span>Muhammad Hassan Akram</span> &mdash; &copy; <span id="curYear">2026</span> All Rights Reserved &bull; Faisalabad, Pakistan</p>
+<p>Designed &amp; Developed by <span>Muhammad Hassan Akram</span> &mdash; &copy; <span id="curYear">2026</span> All Rights Reserved &bull; Faisalabad, Pakistan</p>
 </footer>
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 <script>
 function toggleMob(){document.getElementById("mobMenu").classList.toggle("open");}
 document.getElementById("curYear").textContent=new Date().getFullYear();
-
-/* Category filter + keyword search work together and are both fully
-   wired up. With zero real cards yet, they just govern the empty state,
-   but the moment real .icard elements (with matching data-cat and
-   visible text) are added above, both work immediately — no further
-   JS changes needed. */
 const filterBtns=document.querySelectorAll(".ifbtn");
 const grid=document.getElementById("articleGrid");
 const emptyState=document.getElementById("emptyState");
 let currentCat="all";
 function updateGrid(){
-  const query=document.getElementById("articleSearch").value.trim().toLowerCase();
-  const cards=grid.querySelectorAll(".icard");
-  let visibleCount=0;
-  cards.forEach(card=>{
-    const matchesCat=currentCat==="all"||card.dataset.cat===currentCat;
-    const matchesQuery=!query||card.textContent.toLowerCase().includes(query);
-    const show=matchesCat&&matchesQuery;
-    card.style.display=show?"":"none";
-    if(show) visibleCount++;
-  });
-  const oldNoResults=document.getElementById("noResultsMsg");
-  if(oldNoResults) oldNoResults.remove();
-  if(cards.length>0){
-    // Real articles exist — hide the "coming soon" panel and, if a
-    // search/filter combination matches nothing, show a proper
-    // no-results message instead.
-    if(emptyState) emptyState.style.display="none";
-    if(visibleCount===0){
-      const msg=document.createElement("div");
-      msg.id="noResultsMsg";
-      msg.className="no-results";
-      msg.innerHTML=`<i class="fas fa-search" style="font-size:1.6rem;margin-bottom:0.8rem;display:block;"></i>No articles match${query?` "${query}"`:""}${currentCat!=="all"?" in this category":""}.`;
-      grid.appendChild(msg);
-    }
-  }
+const query=document.getElementById("articleSearch").value.trim().toLowerCase();
+const cards=grid.querySelectorAll(".icard");
+let visibleCount=0;
+cards.forEach(card=>{
+const matchesCat=currentCat==="all"||card.dataset.cat===currentCat;
+const matchesQuery=!query||card.textContent.toLowerCase().includes(query);
+const show=matchesCat&&matchesQuery;
+card.style.display=show?"":"none";
+if(show) visibleCount++;
+});
+const oldNoResults=document.getElementById("noResultsMsg");
+if(oldNoResults) oldNoResults.remove();
+if(cards.length>0){
+if(emptyState) emptyState.style.display="none";
+if(visibleCount===0){
+const msg=document.createElement("div");
+msg.id="noResultsMsg";
+msg.className="no-results";
+msg.innerHTML='<i class="fas fa-search" style="font-size:1.6rem;margin-bottom:0.8rem;display:block;"></i>No articles match'+ (query?' "'+query+'"':'') + (currentCat!=="all"?" in this category":"")+'.';
+grid.appendChild(msg);
+}
+}
 }
 function applyFilter(cat){
-  currentCat=cat;
-  filterBtns.forEach(b=>b.classList.toggle("active",b.dataset.cat===cat));
-  updateGrid();
+currentCat=cat;
+filterBtns.forEach(b=>b.classList.toggle("active",b.dataset.cat===cat));
+updateGrid();
 }
 function handleSearch(value){
-  document.getElementById("searchClear").classList.toggle("show",value.length>0);
-  updateGrid();
+document.getElementById("searchClear").classList.toggle("show",value.length>0);
+updateGrid();
 }
 function clearSearch(){
-  const input=document.getElementById("articleSearch");
-  input.value="";
-  input.focus();
-  handleSearch("");
+const input=document.getElementById("articleSearch");
+input.value="";
+input.focus();
+handleSearch("");
 }
 filterBtns.forEach(btn=>{
-  btn.addEventListener("click",()=>applyFilter(btn.dataset.cat));
+btn.addEventListener("click",()=>applyFilter(btn.dataset.cat));
 });
-
-// Arriving from the nav dropdown (insights.html?cat=food-science) —
-// pre-select that category on load.
 const urlCat=new URLSearchParams(window.location.search).get("cat");
 if(urlCat){
-  const matchBtn=Array.from(filterBtns).find(b=>b.dataset.cat===urlCat);
-  if(matchBtn) applyFilter(urlCat);
+const matchBtn=Array.from(filterBtns).find(b=>b.dataset.cat===urlCat);
+if(matchBtn) applyFilter(urlCat);
 }
-
 const stb=document.getElementById("scrollTop");
 window.addEventListener("scroll",()=>{stb.classList.toggle("show",window.scrollY>400);});
 </script>
