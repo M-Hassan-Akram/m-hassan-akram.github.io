@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DHJQN29PF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DHJQN29PF7');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Artificial Intelligence Explained: A Beginner's Guide | Muhammad Hassan Akram</title>
+<meta name="description" content="A clear, beginner-friendly guide to artificial intelligence: how AI works, machine learning vs deep learning, LLMs, AI ethics, and key terms explained simply."/>
+<meta name="author" content="Muhammad Hassan Akram"/>
+<meta name="robots" content="index, follow"/>
+<meta name="keywords" content="artificial intelligence explained, what is AI, AI for beginners, machine learning vs deep learning, large language models explained, AI glossary, AI terms explained, generative AI basics"/>
+
+<link rel="canonical" href="https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html"/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html"/>
+<meta property="og:title" content="Artificial Intelligence Explained: A Beginner's Guide to AI"/>
+<meta property="og:description" content="A clear, beginner-friendly guide to artificial intelligence: how AI works, machine learning vs deep learning, LLMs, AI ethics, and key terms explained simply."/>
+<meta property="og:site_name" content="Muhammad Hassan Akram Portfolio"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:image" content="https://muhammadhassanakram.me/articles/img/hero1.webp"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Conceptual illustration of artificial intelligence showing a glowing neural network connected to a human brain outline"/>
+<meta property="article:published_time" content="2026-07-31T10:00:00+05:00"/>
+<meta property="article:author" content="Muhammad Hassan Akram"/>
+<meta property="article:section" content="Artificial Intelligence"/>
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Artificial Intelligence Explained: A Beginner's Guide to AI"/>
+<meta name="twitter:description" content="A clear, beginner-friendly guide to artificial intelligence: how AI works, machine learning vs deep learning, LLMs, AI ethics, and key terms explained simply."/>
+<meta name="twitter:image" content="https://muhammadhassanakram.me/articles/img/hero1.webp"/>
+
+<!-- Schema.org: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Artificial Intelligence Explained: A Beginner's Guide to AI, Key Concepts, and Essential Terms",
+  "description": "A clear, beginner-friendly guide to artificial intelligence: how AI works, machine learning vs deep learning, LLMs, AI ethics, and key terms explained simply.",
+  "image": "https://muhammadhassanakram.me/articles/img/hero1.webp",
+  "datePublished": "2026-07-31",
+  "dateModified": "2026-07-31",
+  "author": {
+    "@type": "Person",
+    "name": "Muhammad Hassan Akram",
+    "url": "https://muhammadhassanakram.me/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Muhammad Hassan Akram"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html"
+  }
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://muhammadhassanakram.me/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Insights",
+      "item": "https://muhammadhassanakram.me/insights.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Artificial Intelligence Explained: A Beginner's Guide to AI, Key Concepts, and Essential Terms",
+      "item": "https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html"
+    }
+  ]
+}
+</script>
+
+<!-- Schema.org: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between AI, machine learning, and deep learning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Artificial intelligence (AI) is the broad umbrella term for any technology that makes computers behave intelligently. Machine learning (ML) is the largest subset of AI, focused on systems that learn patterns from data instead of following explicit programmed rules. Deep learning is a specialized technique within machine learning that uses layered artificial neural networks, and it is the technology behind most recent AI breakthroughs, including generative AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Narrow AI, AGI, and ASI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Narrow AI (ANI) is designed to do one task or a related set of tasks very well, such as filtering spam or holding a conversation, and it is the only type of AI that exists today. Artificial General Intelligence (AGI) is a theoretical AI that could handle any intellectual task a human can, and it does not exist yet. Artificial Superintelligence (ASI) is a hypothetical AI that would surpass human intelligence in every way, and it remains firmly in the realm of theory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do AI tools sometimes make up facts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is called hallucination. AI language models generate text by predicting the most statistically likely next word based on patterns in their training data, rather than by checking facts against a verified database. This means they can confidently produce information, quotes, or statistics that sound plausible but are incorrect, so it is important to verify any critical details an AI tool provides."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know how to code to use AI effectively?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most people benefit from AI through everyday tools like chatbots and writing assistants, which only require clear instructions rather than programming knowledge. Learning prompt engineering, the practice of writing clear and specific instructions for an AI model, is far more useful for everyday users than learning to code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is prompt engineering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prompt engineering is the practice of designing clear, effective instructions to guide an AI model's output. A useful framework is Role plus Context plus Task plus Constraints plus Format, for example telling the AI who to act as, what background matters, what to do, any limits to follow, and how to structure the response."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;0,800;1,700&amp;display=swap" rel="stylesheet"/>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+/* ════════════════════════════════════════════════════════════════════════
+   CSS VARIABLES & RESET
+   ════════════════════════════════════════════════════════════════════════ */
+:root {
+  --navy: #0e1f47;
+  --navy2: #1b3a6b;
+  --navy3: #070f25;
+  --gold: #c8972b;
+  --gold2: #e8b84b;
+  --gold3: #f5d080;
+  --white: #ffffff;
+  --light: #f4f6fa;
+  --light2: #eef1f8;
+  --muted: #6b7a99;
+  --text: #1a2540;
+  --border: #dde3f0;
+  --shadow: 0 4px 20px rgba(14, 31, 71, 0.08);
+  --grad: linear-gradient(135deg, #0e1f47 0%, #1b3a6b 55%, #0a1530 100%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   NAVIGATION
+   ════════════════════════════════════════════════════════════════════════ */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(14, 31, 71, 0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 66px;
+  border-bottom: 1px solid rgba(200, 151, 43, 0.2);
+}
+
+.nav-logo {
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-logo:hover {
+  color: var(--gold2);
+}
+
+.nav-logo span {
+  color: var(--white);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--gold2);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Mobile menu toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    background: rgba(14, 31, 71, 0.98);
+    flex-direction: column;
+    padding: 1rem 5%;
+    gap: 0;
+    border-bottom: 1px solid rgba(200, 151, 43, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.8rem 0;
+    font-size: 0.95rem;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   ARTICLE CONTAINER
+   ════════════════════════════════════════════════════════════════════════ */
+.article-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 100px 5% 90px;
+}
+
+@media (max-width: 600px) {
+  .article-wrap {
+    padding: 90px 4% 60px;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   BREADCRUMB
+   ════════════════════════════════════════════════════════════════════════ */
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--gold);
+}
+
+.breadcrumb-sep {
+  color: var(--border);
+  font-size: 0.75rem;
+}
+
+.breadcrumb-current {
+  color: var(--navy);
+  font-weight: 500;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   ARTICLE HEADER
+   ════════════════════════════════════════════════════════════════════════ */
+.article-category {
+  display: inline-block;
+  background: rgba(200, 151, 43, 0.12);
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.article-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.8rem;
+}
+
+.article-author {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.article-author img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.article-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.article-meta-item i {
+  font-size: 0.8rem;
+  color: var(--gold);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   HERO IMAGE
+   ════════════════════════════════════════════════════════════════════════ */
+.article-hero {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 2.2rem;
+  box-shadow: var(--shadow);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   TABLE OF CONTENTS
+   ════════════════════════════════════════════════════════════════════════ */
+.toc {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.toc-title {
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toc-title i {
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+
+.toc-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.3rem;
+}
+
+.toc-list a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.87rem;
+  line-height: 1.9;
+  transition: color 0.2s ease;
+}
+
+.toc-list a:hover {
+  color: var(--gold);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   ARTICLE BODY
+   ════════════════════════════════════════════════════════════════════════ */
+.article-body {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+.article-body h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  color: var(--navy);
+  margin: 2.5rem 0 1rem;
+  font-weight: 700;
+  scroll-margin-top: 80px;
+}
+
+.article-body h3 {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin: 1.8rem 0 0.8rem;
+  font-weight: 700;
+  scroll-margin-top: 80px;
+}
+
+.article-body p {
+  margin-bottom: 1.2rem;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.2rem 1.4rem;
+  padding-left: 0.5rem;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body li::marker {
+  color: var(--gold);
+}
+
+.article-body a {
+  color: var(--navy2);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
+}
+
+.article-body a:hover {
+  color: var(--gold);
+  text-decoration-color: var(--gold2);
+}
+
+.article-body blockquote {
+  border-left: 4px solid var(--gold);
+  background: var(--light);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--navy2);
+}
+
+.article-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+.article-body figure {
+  margin: 1.5rem 0;
+}
+
+.article-body figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.article-body code {
+  background: var(--light2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+  font-size: 0.9em;
+  color: var(--navy);
+}
+
+.article-body pre {
+  background: var(--navy3);
+  color: var(--light);
+  padding: 1.2rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-body pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* Tables (added for this article: template did not define table styling) */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.article-body table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 0.92rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-body th,
+.article-body td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-body th {
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.article-body tr:last-child td {
+  border-bottom: none;
+}
+
+.article-body tbody tr:nth-child(even) td {
+  background: var(--light);
+}
+
+/* Responsive YouTube embed (added for this article: template did not define a video embed) */
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   SHARE BUTTONS
+   ════════════════════════════════════════════════════════════════════════ */
+.share-section {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 2.5rem 0;
+  padding: 1.3rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.share-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.share-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--light);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.share-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.share-btn i {
+  font-size: 0.9rem;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   FAQ ACCORDION
+   ════════════════════════════════════════════════════════════════════════ */
+.faq-section {
+  margin: 2.5rem 0;
+}
+
+.faq-section h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--gold);
+}
+
+.faq-item.open {
+  border-color: var(--gold);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: var(--light);
+  border: none;
+  padding: 1rem 1.2rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--navy);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background: var(--light2);
+}
+
+.faq-question i {
+  transition: transform 0.3s ease;
+  color: var(--gold);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item.open .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 1.2rem;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  padding: 0 1.2rem 1rem;
+}
+
+.faq-answer p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   RELATED ARTICLES
+   ════════════════════════════════════════════════════════════════════════ */
+.related-section {
+  margin-top: 3rem;
+}
+
+.related-section h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.related-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  background: var(--white);
+}
+
+.related-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.related-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.related-card p {
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   FOOTER
+   ════════════════════════════════════════════════════════════════════════ */
+.site-footer {
+  background: #060d1c;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.76rem;
+}
+
+.site-footer a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: var(--gold2);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   UTILITY CLASSES
+   ════════════════════════════════════════════════════════════════════════ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Print styles */
+@media print {
+  .site-nav,
+  .share-section,
+  .faq-question i,
+  .related-section {
+    display: none !important;
+  }
+
+  .article-wrap {
+    padding-top: 20px;
+  }
+
+  .article-body a {
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .article-body a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: var(--muted);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+   SITE NAVIGATION
+   ════════════════════════════════════════════════════════════════════════ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <a href="../index.html#hero" class="nav-logo">MH<span>A</span></a>
+
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../insights.html">Insights</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+   ARTICLE CONTENT
+   ════════════════════════════════════════════════════════════════════════ -->
+<article class="article-wrap">
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="../insights.html">Insights</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Artificial Intelligence Explained: A Beginner's Guide to AI, Key Concepts, and Essential Terms</span>
+  </nav>
+
+  <!-- Article Header -->
+  <span class="article-category">Artificial Intelligence</span>
+  <h1 class="article-title">Artificial Intelligence Explained: A Beginner's Guide to AI, Key Concepts, and Essential Terms</h1>
+
+  <div class="article-meta">
+    <div class="article-author">
+      <img src="https://muhammadhassanakram.me/articles/img/author.webp" alt="Muhammad Hassan Akram, Food Science and Technology student and AI enthusiast" width="34" height="34" loading="lazy"/>
+      <span>Muhammad Hassan Akram</span>
+    </div>
+    <span class="article-meta-item"><i class="far fa-calendar" aria-hidden="true"></i> July 31, 2026</span>
+    <span class="article-meta-item"><i class="far fa-clock" aria-hidden="true"></i> 17 min read</span>
+  </div>
+
+  <!-- Hero Image -->
+  <img 
+    class="article-hero" 
+    src="https://muhammadhassanakram.me/articles/img/hero1.webp" 
+    alt="Conceptual illustration of artificial intelligence showing a glowing neural network connected to a human brain outline" 
+    width="1200" 
+    height="630" 
+    loading="eager" 
+    decoding="async"
+  />
+
+  <!-- Table of Contents -->
+  <nav class="toc" aria-label="Table of contents">
+    <h2 class="toc-title"><i class="fas fa-list-ul" aria-hidden="true"></i> In this article</h2>
+    <ol class="toc-list">
+      <li><a href="#why-ai-matters">Why Understanding AI Matters</a></li>
+      <li><a href="#what-is-ai">What Is Artificial Intelligence?</a></li>
+      <li><a href="#how-ai-works">How Does AI Actually Work?</a></li>
+      <li><a href="#history-of-ai">A Brief History of AI</a></li>
+      <li><a href="#types-of-ai">The Three Types of AI</a></li>
+      <li><a href="#ai-toolkit">The Core AI Toolkit: ML, Deep Learning &amp; Generative AI</a></li>
+      <li><a href="#essential-ai-terms">Essential AI Terms You Should Know</a></li>
+      <li><a href="#ai-vs-ml-vs-dl">AI vs. ML vs. Deep Learning vs. Generative AI</a></li>
+      <li><a href="#real-world-applications">Real-World Applications of AI</a></li>
+      <li><a href="#benefits-and-limitations">Benefits and Limitations of AI</a></li>
+      <li><a href="#ai-ethics">AI Ethics and Responsible AI</a></li>
+      <li><a href="#conclusion">Conclusion: Why Everyone Should Understand AI</a></li>
+    </ol>
+  </nav>
+
+  <!-- Article Body -->
+  <div class="article-body">
+
+    <h2 id="why-ai-matters">Why Understanding AI Matters</h2>
+    <p>Artificial intelligence is changing how we work and live, and the shift is happening faster than most industries can keep pace with. According to a McKinsey Global Institute analysis, AI is projected to generate an additional $13 to $22 trillion in value annually by 2033. The software industry has already captured a large share of that value, but most of the impact still lies ahead, in sectors like retail, travel, transportation, agriculture, and manufacturing: industries that have historically had little to do with computer science.</p>
+    <p>Learning about AI in 2026 is no longer optional for software engineers alone. It has become the new baseline for staying competitive, regardless of your industry or technical background. Whether you want to use AI tools to get more done in your own daily work, or you simply want to understand how this technology is reshaping society, understanding the basics puts you in a better position to navigate what comes next.</p>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-1.webp" alt="Infographic showing projected AI-driven economic growth across agriculture, healthcare, retail, and other non-tech industries by 2033" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>AI's economic impact is expected to reach far beyond the tech industry by 2033.</figcaption>
+    </figure>
+
+    <h2 id="what-is-ai">What Is Artificial Intelligence?</h2>
+    <p>At its core, artificial intelligence is the ability of computer systems to perform tasks we usually associate with human intelligence. That includes understanding what you say or write, recognizing what's in a photograph, translating between languages, and making decisions based on information.</p>
+    <p>It helps to be clear about what AI is not. AI does not think the way you do. It has no feelings, no opinions, and no consciousness. What it does have is the ability to process enormous amounts of information, find patterns hidden inside that information, and use those patterns to produce useful outputs.</p>
+    <p>Here's a simple way to picture it: when an AI writes a birthday message for your friend, it isn't thinking about your friend at all. It's drawing on billions of examples of text it has processed before to identify the patterns of what a good birthday message usually looks like, then reproducing that pattern with the details you gave it.</p>
+
+    <h2 id="how-ai-works">How Does AI Actually Work?</h2>
+    <p>You do not need to be a mathematician or a computer scientist to understand how AI operates. The most common type of AI can be thought of as learning a simple "A to B" mapping: it takes an input (A) and generates an output (B).</p>
+    <p>Here is the process in three steps:</p>
+    <ol>
+      <li><strong>Gather lots of examples.</strong> To build an AI that recognizes photos, developers first show it millions of labeled images.</li>
+      <li><strong>Find the patterns.</strong> The AI studies all these examples and learns the underlying statistical patterns. A language tool, for instance, learns grammar, writing style, and reasoning patterns this way.</li>
+      <li><strong>Generate new outputs.</strong> When you give the AI a new prompt, it applies what it learned to produce a relevant response.</li>
+    </ol>
+    <p>The key idea is that the system learns from examples. It is not programmed with a rigid, step-by-step set of instructions the way traditional software is.</p>
+
+    <h2 id="history-of-ai">A Brief History of AI</h2>
+    <p>AI feels like a futuristic invention, but it was actually founded as an academic discipline back in 1956, at a workshop held at Dartmouth College. A few years later, in 1959, an IBM researcher named Arthur Samuel coined the term "machine learning" while building a computer program that could play checkers better than he could.</p>
+    <p>Since then, the field has gone through repeated cycles of enormous optimism followed by disappointment and funding cuts, periods researchers call "AI winters." Everything changed in the 2010s. The rise of specialized processors known as GPUs, combined with the massive amounts of data suddenly available on the internet, allowed a technique called deep learning to take off. That combination of better hardware and more data set the stage for the AI tools we use today.</p>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-2.webp" alt="Timeline graphic of AI history highlighting the 1956 Dartmouth workshop, Arthur Samuel's 1959 checkers program, the AI winters, and the deep learning boom of the 2010s" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>From the 1956 Dartmouth workshop to the deep learning boom of the 2010s.</figcaption>
+    </figure>
+
+    <h2 id="types-of-ai">The Three Types of AI</h2>
+    <p>Not all AI is the same. To make sense of the news headlines and the products you encounter, it helps to understand the three broad categories researchers use to classify artificial intelligence.</p>
+
+    <h3>Narrow AI (ANI)</h3>
+    <p>Narrow AI, also called Artificial Narrow Intelligence, is the only kind of AI that exists today. It is built to do one specific task, or a set of closely related tasks, extremely well. A spam filter is excellent at catching junk email, but it cannot help you plan a vacation. A self-driving car can navigate roads, but it cannot write a poem.</p>
+    <p>Even advanced conversational tools like ChatGPT fall into this category. They are language specialists. They cannot physically see, hear, or interact with the world on their own. Narrow AI systems are, in effect, "one-trick ponies," but when that one trick matches your need, they can be extremely valuable.</p>
+
+    <h3>General AI (AGI)</h3>
+    <p>Artificial General Intelligence refers to a theoretical AI that could handle any intellectual task a human can. An AGI could switch seamlessly between writing a novel, diagnosing a medical condition, negotiating a business deal, and fixing a car.</p>
+    <p>General AI does not exist yet. Experts disagree, often strongly, on whether it will arrive within a few years, several decades, or perhaps centuries from now.</p>
+
+    <h3>Superintelligence (ASI)</h3>
+    <p>Artificial Superintelligence describes a hypothetical AI that would surpass human intelligence in every possible way. Because AGI and ASI both remain firmly in the realm of theory and the distant future, there is no need to lose sleep over science-fiction scenarios of sentient robots taking over the world.</p>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-3.webp" alt="Pyramid diagram titled The Intelligence Hierarchy showing Narrow AI at the base, General AI in the middle, and Superintelligence at the peak" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>The Intelligence Hierarchy: Narrow AI is today's reality, AGI and ASI remain theoretical.</figcaption>
+    </figure>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Status Today</th>
+            <th>Real-World Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Narrow AI (ANI)</td>
+            <td>Exists today</td>
+            <td>Spam filters, self-driving cars, ChatGPT</td>
+          </tr>
+          <tr>
+            <td>General AI (AGI)</td>
+            <td>Theoretical, does not exist yet</td>
+            <td>Not yet built</td>
+          </tr>
+          <tr>
+            <td>Superintelligence (ASI)</td>
+            <td>Hypothetical, far future</td>
+            <td>Not yet built</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="ai-toolkit">The Core AI Toolkit: ML, Deep Learning &amp; Generative AI</h2>
+
+    <h3>What Is Machine Learning (ML)?</h3>
+    <p>Machine learning is the most widely used tool in the AI toolkit. It is the study of programs that automatically improve at a task by learning from data rather than being explicitly programmed.</p>
+    <p>The most common form is called supervised learning, the same "A to B" mapping mentioned earlier. If the input (A) is an audio clip and the output (B) is a text transcript, the system has learned speech recognition. The algorithm studies historical data and gradually adjusts itself so it can make accurate predictions on new, unseen data.</p>
+
+    <h3>What Is Deep Learning (DL)?</h3>
+    <p>Deep learning is a powerful subset of machine learning built on systems called artificial neural networks. These networks were loosely inspired by the neurons in the human brain, though the technical details work quite differently.</p>
+    <p>Picture an artificial neuron as a single Lego brick. Deep learning stacks thousands, or even millions, of these digital bricks into multiple layers. Data enters the first layer, each layer identifies patterns and passes information to the next, and the final layer delivers a prediction or an output. Deep learning is the specific technology behind recent breakthroughs in self-driving cars, generative AI, and advanced language models.</p>
+
+    <h3>What Is Generative AI?</h3>
+    <p>Before generative AI, computers were mostly used to analyze, sort, and organize content that already existed. Generative AI works differently: it creates entirely new content that never existed before.</p>
+    <p>By identifying complex patterns in the enormous amounts of data it was trained on, generative AI can write text, generate photorealistic images, compose music, and even write software code, all without a human providing the exact output beforehand.</p>
+
+    <h2 id="essential-ai-terms">Essential AI Terms You Should Know</h2>
+    <p>Beyond the big three concepts above, a handful of terms come up constantly in AI conversations. Here is what each one actually means.</p>
+
+    <h3>Large Language Models (LLMs)</h3>
+    <p>Large Language Models are massive neural networks trained on enormous amounts of text: billions or even trillions of words pulled from the internet. The word "large" refers both to the size of that training data and to the billions of internal parameters the model uses to store the patterns it has learned.</p>
+    <p>At their core, LLMs work by using supervised learning to repeatedly predict the next word in a sequence. If an LLM reads the input "My favorite drink is," it uses statistical patterns to predict that the next word is more likely to be "coffee" than "democracy." Tools like ChatGPT, Claude, and Gemini are all examples of Large Language Models.</p>
+
+    <h3>Natural Language Processing (NLP)</h3>
+    <p>Natural Language Processing is a subfield of AI and linguistics focused on enabling machines to understand, interpret, and generate human language. NLP is what allows a computer to read a messy, human-written email and correctly flag it as spam, or translate a paragraph from English into Chinese.</p>
+
+    <h3>Computer Vision</h3>
+    <p>Computer vision is the branch of AI that lets machines pull meaningful information out of digital images, videos, and the visual world. In a manufacturing plant, for example, computer vision can inspect a photo of a newly assembled phone and instantly flag a scratch or dent on the screen. It's also the technology that lets self-driving cars spot traffic lights, pedestrians, and other vehicles.</p>
+
+    <h3>Reinforcement Learning</h3>
+    <p>Reinforcement learning is a training method where an AI agent learns to make good decisions through trial and error. The model is rewarded for good outcomes and penalized for bad ones, and over time, by trying to maximize its rewards, it learns the best strategy for complex situations. This is the technique most often used to teach AI to master complicated video games or board games.</p>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-4.webp" alt="Diagram of the reinforcement learning cycle showing an agent taking an action in an environment and receiving a reward or punishment and a new state" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>The reinforcement learning cycle: agent, action, environment, and reward.</figcaption>
+    </figure>
+
+    <h3>What Is an AI Model?</h3>
+    <p>An AI model is the actual software program or mathematical system produced by applying a machine learning algorithm to data. Think of the model as the finished, "learned" tool. Once it has been trained on historical data, the model becomes the engine you interact with to make predictions, sort information, or generate new text.</p>
+
+    <h3>Training Data</h3>
+    <p>Training data is the collection of examples fed into an AI system so it can learn. Data can be structured, meaning it lives in neat, organized spreadsheets like housing prices and square footage, or unstructured, meaning it consists of text, audio, and images.</p>
+    <p>AI systems depend entirely on this data, but real-world data is often messy, with missing values or incorrect labels. That's why data preparation and cleaning make up a huge part of building any AI system. It's also worth knowing that models have a "knowledge cutoff" date. They only know about information up to the point where their training data ended.</p>
+
+    <h3>Algorithms</h3>
+    <p>An algorithm is simply a well-defined process or set of rules a computer follows to solve a problem. In machine learning, the term usually refers to the specific method, such as a decision tree or a neural network, used to find patterns in data and build the predictive model.</p>
+
+    <h3>AI Agents and Agentic AI</h3>
+    <p>An AI agent is an autonomous or semi-autonomous piece of software that can perceive its environment, make decisions, and use external tools to reach a goal.</p>
+    <p>Unlike a standard chatbot, which simply waits for you to ask a single question, an agentic system can break a complex task into smaller steps, act on its own, and adjust its approach based on the results it gets. For example, an AI agent could be asked to research a business prospect, search the web for that person's recent LinkedIn posts, draft a personalized outreach email, and save it to your drafts folder, all in a single connected run.</p>
+
+    <h3>Prompt Engineering</h3>
+    <p>Prompt engineering is the practice of designing clear, effective instructions to guide an AI model's output. Vague prompts produce vague results.</p>
+    <p>The good news is that prompt engineering doesn't require a computer science degree. It just requires giving the AI specific context. A useful framework to follow is Role + Context + Task + Constraints + Format. For example, instead of asking "write an email about marketing," a stronger prompt would be: "You are a senior marketing strategist (Role). You are targeting small business owners (Context). Write three email subject lines (Task). Keep them under 10 words (Constraints). Return them as a numbered list (Format)."</p>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-5.webp" alt="Visual formula for prompt engineering showing puzzle pieces labeled Role, Context, Task, Constraints, and Format combining into a perfect AI output" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>A simple formula for writing better AI prompts: Role + Context + Task + Constraints + Format.</figcaption>
+    </figure>
+
+    <h2 id="ai-vs-ml-vs-dl">AI vs. ML vs. Deep Learning vs. Generative AI</h2>
+    <p>These terms often get used interchangeably, but they actually form a hierarchy. A helpful way to picture this is as a set of nested Russian nesting dolls, each one sitting inside the next.</p>
+    <p><strong>Artificial Intelligence (AI)</strong> is the largest, outermost doll. It's the broad umbrella term for any technology that makes computers behave intelligently.</p>
+    <p><strong>Machine Learning (ML)</strong> sits inside that. It's the largest subset of AI, focused specifically on systems that learn from data instead of following explicit programming.</p>
+    <p><strong>Deep Learning (DL)</strong> sits inside the ML doll. It's the powerful technique that uses artificial neural networks to process data.</p>
+    <p><strong>Generative AI</strong> is the innermost doll. It uses deep learning neural networks specifically to generate brand-new content.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Term</th>
+            <th>What It Is</th>
+            <th>How It Relates</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Artificial Intelligence</td>
+            <td>Umbrella term for machines behaving intelligently</td>
+            <td>The outermost, broadest category</td>
+          </tr>
+          <tr>
+            <td>Machine Learning</td>
+            <td>Systems that learn patterns from data</td>
+            <td>The largest subset of AI</td>
+          </tr>
+          <tr>
+            <td>Deep Learning</td>
+            <td>A technique using layered neural networks</td>
+            <td>A powerful subset of machine learning</td>
+          </tr>
+          <tr>
+            <td>Generative AI</td>
+            <td>Deep learning applied to creating new content</td>
+            <td>The most specific, innermost subset</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="real-world-applications">Real-World Applications of AI</h2>
+    <p>AI isn't just a novelty. It's already solving real problems across a wide range of industries.</p>
+
+    <h3>Smart Speakers</h3>
+    <p>Devices like Amazon Echo or Google Home rely on a whole pipeline of AI models working together. First, an algorithm listens for a wake word ("Hey Device"). Next, speech recognition transcribes your voice into text. Then, intent recognition figures out that you want to set a 10-minute timer, and finally, the software executes that command and starts the clock.</p>
+
+    <h3>Autonomous Vehicles</h3>
+    <p>Self-driving cars rely heavily on computer vision. They combine input from cameras, radar, and laser sensors known as lidar to detect other vehicles, pedestrians, and traffic lights. That data feeds into a motion-planning algorithm that safely steers the wheel and applies the brakes to avoid collisions.</p>
+
+    <h3>Healthcare and Finance</h3>
+    <p>In medicine, AI algorithms are helping diagnose diseases by analyzing patient records and MRI or X-ray scans with remarkable speed. In finance, banks use AI to continuously monitor transaction data and automatically flag potential fraud.</p>
+
+    <h2 id="benefits-and-limitations">Benefits and Limitations of AI</h2>
+    <p>AI is a genuine superpower, but it comes with real trade-offs worth understanding.</p>
+    <p>The benefits are substantial. AI can automate repetitive tasks, cut down on administrative workload, speed up medical and scientific research, and significantly boost a worker's creative output and efficiency.</p>
+    <p>The limitations matter just as much:</p>
+    <ul>
+      <li><strong>AI lacks true understanding.</strong> Neural networks are, at their core, pattern-matching engines. They don't have real empathy, common sense, or a moral compass.</li>
+      <li><strong>AI can hallucinate.</strong> Sometimes an AI generates information that sounds entirely plausible but is factually wrong. Because it's predicting words based on patterns rather than checking a verified source, it can confidently invent fake statistics, fake quotes, or fake citations, a phenomenon known as "hallucinating." Always verify anything critical an AI tells you.</li>
+      <li><strong>AI can't learn from a single example the way people do.</strong> A human doctor can read one chapter of a medical textbook, look at a few example cases, and understand pneumonia. AI doesn't work that way. To learn a single concept reliably, it usually needs thousands, or millions, of labeled examples.</li>
+    </ul>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-6.webp" alt="Two column comparison chart contrasting what AI excels at, such as automation and pattern matching, with what AI struggles with, such as empathy and common sense" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>What AI excels at, and where it still falls short.</figcaption>
+    </figure>
+
+    <h2 id="ai-ethics">AI Ethics and Responsible AI</h2>
+    <p>Because AI models learn from data created by people, they inevitably absorb human flaws along with human knowledge. If the training data contains societal biases around gender, race, or culture, the AI will reflect, and sometimes amplify, those same biases.</p>
+    <p>A well-known <a href="https://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-debiasing-word-embeddings" target="_blank" rel="noopener noreferrer">2016 research paper on word embeddings</a> illustrates this clearly. Researchers tested a language model trained on internet text by asking it to complete word analogies. Asked "Man is to woman as King is to what?", the model correctly answered "Queen." But asked "Man is to computer programmer as woman is to what?", it answered "Homemaker." The model had mathematically placed words based on how they appeared together across millions of internet documents, and that data reflected a real-world gender stereotype linking women to homemaking rather than to technical careers.</p>
+    <p>Because AI systems increasingly influence decisions around hiring, medical treatment, and lending, biases like this can cause genuine harm. Ethical diligence has to be part of building and using AI responsibly. That means continuously auditing systems for fairness, protecting people's data privacy, and making sure the technology gets deployed in ways that actually make society better off, not worse.</p>
+
+    <h2 id="conclusion">Conclusion: Why Everyone Should Understand AI</h2>
+    <p>When it comes to the rapid rise of artificial intelligence, the best approach is what's sometimes called the Goldilocks Rule. Don't be too pessimistic, fearing that AI will immediately destroy jobs and take over the world. Don't be too optimistic either, assuming AI is a magic wand that can flawlessly solve every business problem overnight. The realistic view sits right in the middle: "just right."</p>
+
+    <blockquote>
+      <p>AI is often called the new electricity. It's a transformative, general-purpose technology set to reshape every industry it touches.</p>
+    </blockquote>
+
+    <figure>
+      <img src="https://muhammadhassanakram.me/articles/img/fig-7.webp" alt="Illustration of a balance scale representing the Goldilocks Rule for AI, weighing extreme tech optimism against extreme tech pessimism" width="1200" height="675" loading="lazy" decoding="async"/>
+      <figcaption>The Goldilocks Rule: balancing AI optimism with AI pessimism.</figcaption>
+    </figure>
+
+    <p>By learning the basic vocabulary, understanding AI's real strengths, and respecting its genuine limitations, you put yourself in a stronger position to benefit from it. You don't need a computer science degree to make AI work for you. Start experimenting with it today, figure out where it actually helps your own work, and build it into your routine. The future belongs to people who learn to collaborate effectively with artificial intelligence.</p>
+    <p>If you'd like to talk about how AI and technology could support your own field, whether that's food science, agriculture, or something else entirely, feel free to <a href="../index.html#contact">get in touch</a>.</p>
+
+    <h2 id="video">Watch the Video</h2>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/xjBvTk1OAbs" title="Artificial Intelligence Explained: A Beginner's Guide (video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <!-- Share Buttons -->
+  <div class="share-section" aria-label="Share this article">
+    <span class="share-label">Share:</span>
+    <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+    </a>
+    <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html&amp;text=Artificial%20Intelligence%20Explained%3A%20A%20Beginner%27s%20Guide" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+      <i class="fab fa-x-twitter" aria-hidden="true"></i>
+    </a>
+    <a class="share-btn" href="https://wa.me/?text=Artificial%20Intelligence%20Explained%3A%20A%20Beginner%27s%20Guide%20https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a class="share-btn" href="mailto:?subject=Artificial%20Intelligence%20Explained%3A%20A%20Beginner%27s%20Guide&amp;body=https://muhammadhassanakram.me/articles/artificial-intelligence-beginners-guide.html" aria-label="Share by email">
+      <i class="far fa-envelope" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        What is the difference between AI, machine learning, and deep learning?
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Artificial intelligence (AI) is the broad umbrella term for any technology that makes computers behave intelligently. Machine learning (ML) is the largest subset of AI, focused on systems that learn patterns from data instead of following explicit programmed rules. Deep learning is a specialized technique within machine learning that uses layered artificial neural networks, and it is the technology behind most recent AI breakthroughs, including generative AI.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        What is the difference between Narrow AI, AGI, and ASI?
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Narrow AI (ANI) is designed to do one task or a related set of tasks very well, such as filtering spam or holding a conversation, and it is the only type of AI that exists today. Artificial General Intelligence (AGI) is a theoretical AI that could handle any intellectual task a human can, and it does not exist yet. Artificial Superintelligence (ASI) is a hypothetical AI that would surpass human intelligence in every way, and it remains firmly in the realm of theory.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        Why do AI tools sometimes make up facts?
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div class="faq-answer">
+        <p>This is called hallucination. AI language models generate text by predicting the most statistically likely next word based on patterns in their training data, rather than by checking facts against a verified database. This means they can confidently produce information, quotes, or statistics that sound plausible but are incorrect, so it is important to verify any critical details an AI tool provides.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        Do I need to know how to code to use AI effectively?
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div class="faq-answer">
+        <p>No. Most people benefit from AI through everyday tools like chatbots and writing assistants, which only require clear instructions rather than programming knowledge. Learning prompt engineering, the practice of writing clear and specific instructions for an AI model, is far more useful for everyday users than learning to code.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        What is prompt engineering?
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Prompt engineering is the practice of designing clear, effective instructions to guide an AI model's output. A useful framework is Role plus Context plus Task plus Constraints plus Format, for example telling the AI who to act as, what background matters, what to do, any limits to follow, and how to structure the response.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Articles -->
+  <section class="related-section" aria-label="Related articles">
+    <h2>Related Articles</h2>
+    <div class="related-grid">
+      <a href="pakistani-mango-freeze-drying.html" class="related-card">
+        <img src="img/hero.webp" alt="Pakistani Mango Freeze Drying: Science, Industry and Export Potential" loading="lazy" decoding="async" width="220" height="110"/>
+        <p>Pakistani Mango Freeze Drying: Science, Industry and Export Potential</p>
+      </a>
+    </div>
+  </section>
+
+</article>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+   FOOTER
+   ════════════════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <p>
+    Designed &amp; Developed by <a href="https://muhammadhassanakram.me">Muhammad Hassan Akram</a> 
+    &mdash; &copy; <span id="curYear">2026</span> All Rights Reserved 
+    &bull; Faisalabad, Pakistan
+  </p>
+</footer>
+
+<!-- ════════════════════════════════════════════════════════════════════════
+   JAVASCRIPT
+   ════════════════════════════════════════════════════════════════════════ -->
+<script>
+  // Update copyright year automatically
+  document.getElementById("curYear").textContent = new Date().getFullYear();
+
+  // Mobile menu toggle
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    const btn = document.querySelector('.nav-toggle');
+    const isOpen = nav.classList.toggle('active');
+    btn.setAttribute('aria-expanded', isOpen);
+    btn.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+  }
+
+  // FAQ accordion toggle
+  function toggleFaq(button) {
+    const item = button.parentElement;
+    const isOpen = item.classList.toggle('open');
+    button.setAttribute('aria-expanded', isOpen);
+  }
+
+  // Close mobile menu when clicking a link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('navLinks');
+      const btn = document.querySelector('.nav-toggle');
+      nav.classList.remove('active');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const nav = document.getElementById('navLinks');
+    const btn = document.querySelector('.nav-toggle');
+    if (!nav.contains(e.target) && !btn.contains(e.target) && nav.classList.contains('active')) {
+      nav.classList.remove('active');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+</script>
+
+</body>
+</html>
